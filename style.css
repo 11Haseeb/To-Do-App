@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root, body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+    height: 100%;
+    width: 100%;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom,  #68EACC, #497BE8);
+}
+.container{
+    max-width: 350px;
+    width: 100%;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.1);
+    border-radius: 3px;
+}
+h4{
+    font-size: 3rem;
+    font-weight: 600;
+    padding: 0.2em 0 0.5em 0;
+}
+.input-field{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    height: 40px;
+    margin-bottom: 1.5rem;
+}
+input{
+    outline: 2px solid #ddd;
+    padding: 0.4em 0.6em;
+    font-size: 1.8rem;
+    border-radius: 5px;
+    width: 85%;
+    border: none;
+    transition: all 0.4s;
+}
+input:focus{
+    outline: 2px solid rgba(158, 2, 158, 0.562);
+}
+.input-field button{
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    color: #fff;
+    border: none;
+    background: rgba(158, 2, 158, 0.562);
+    border-radius: 5px;
+    cursor: pointer;
+    height: 100%;
+}
+.input-field button.active{
+    background: rgba(158, 2, 158, 1);
+}
+ul{
+    margin-bottom: 2.5rem;
+}
+li{
+    position: relative;
+    list-style: none;
+    width: 100%;
+    display: block;
+    padding: 0.6em;
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    background: #dddddd57;
+    border-radius: 3px;
+}
+.close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 0, 0, 0.705);
+    color: #fff;
+    height: 100%;
+    padding: 0 0.4em;
+    transition: all 0.6s;
+    transform: translateX(45px);
+    z-index: -1;
+    display: none;
+}
+li:hover .close{
+    transform: translateX(0);
+    z-index: 1;
+    display: flex;
+}
+.close:hover{
+    background: rgba(255, 0, 0, 0.9);
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info .line{
+    font-size: 1.6rem;
+    color: #444;
+}
+.info button{
+    font-size: 1.5rem;
+    padding: 0.4em 0.6em;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    background: rgba(158, 2, 158, 0.7);
+    transition: all 0.2s;
+    border-radius: 5px;
+}
+.info button:hover{
+    background: rgba(158, 2, 158, 1);
+}
